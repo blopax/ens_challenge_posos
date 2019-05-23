@@ -1,0 +1,13 @@
+un fichier describe pour analyser les fichiers
+
+un ficher visu
+
+utiliser sklearn pipeline
+
+rajouter features : par exp il y a t il un nb (quantite poids duree ?)... features ac noms de tous les medocs
+
+des features ac mots clefs
+- prix: prix, combien coute, combien ca coute
+- duree heures, jours, mois, annees
+- quantite : nombres en lettres aussi ?
+- poids : mg, g, kg (a voir si on separe kg)
