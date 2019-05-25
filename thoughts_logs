@@ -11,3 +11,14 @@ des features ac mots clefs
 - duree heures, jours, mois, annees
 - quantite : nombres en lettres aussi ?
 - poids : mg, g, kg (a voir si on separe kg)
+
+1 feature avec le nb de medocs cites
+1 feature par medoc ?
+
+1 feature si et ? si ou ? pour notion de concommitence
+
+
+faire un search pour les differents algo de classifieurs puis votation
+
+
+ds train degager tout ce qui est trop petit (il y a des intentions avec moins de 0.1% --> bruit ?)

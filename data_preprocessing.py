@@ -10,8 +10,8 @@ class GetProcessedData:
     and label array as 2 dimensions np.array.
     """
 
-    #TODO work on dataframe to add features (normalize them ?). see if issue with pipeline cf thoughts logs.
-
+    # TODO work on dataframe to add features (normalize them ?). see if issue with pipeline cf thoughts logs.
+    # Todo randomly shuffle dataset in pandas before creating features?
 
     def __init__(self, input_fpath, output_fpath):
         self._input_path = input_fpath
@@ -37,8 +37,8 @@ class GetProcessedData:
         :param train_df: pd.Dataframe
         :return: pd.Dataframe
         """
-        contradictory_duplicates_position = train_df.duplicated(['question'], keep=False) & ~train_df.duplicated(keep=False)
-        cleaned_train_df = train_df[~contradictory_duplicates_position]
+        contradictory_duplicates = train_df.duplicated(['question'], keep=False) & ~train_df.duplicated(keep=False)
+        cleaned_train_df = train_df[~contradictory_duplicates]
         cleaned_train_df = cleaned_train_df.drop_duplicates(subset=['question'], keep="first")
         cleaned_train_df.reset_index(drop=True, inplace=True)
         return cleaned_train_df
@@ -51,16 +51,18 @@ class GetProcessedData:
         train_df = self._get_df_from_csv()
         train_df = self._clean(train_df)
         feature = np.array(train_df['question'])
-        if feature.ndim == 1:
-            feature = feature.reshape(feature.shape[0], 1)
+        # if feature.ndim == 1:
+        #     feature = feature.reshape(feature.shape[0], 1)
         label = np.array(train_df['intention'])
-        if label.ndim == 1:
-            label = label.reshape(label.shape[0], 1)
+        # if label.ndim == 1:
+        #     label = label.reshape(label.shape[0], 1)
+        # TOdo reshape pas bon a cause TFIDF car considere ["bonjour"] au lieu de "bonjour" a voir si reshape utile
         if show_df is True:
             print(train_df.head(10))
             print(train_df.describe(include='all'))
         if show_arrays is True:
-            print("Feature shape = {}:\n{}\n\nLabel shape = {}:\n{}\n".format(feature.shape, feature, label.shape, label))
+            print("Feature shape = {}:\n{}\n\nLabel shape = {}:\n{}\n".format(feature.shape, feature,
+                                                                              label.shape, label))
             print(feature.ndim)
 
         return train_df, feature, label
@@ -72,6 +74,5 @@ class GetProcessedData:
 
 
 if __name__ == "__main__":
-    GetProcessedData(utils.TRAIN_INPUT_FILE, utils.TRAIN_OUTPUT_FILE).get_feature_label_arrays(show_arrays=True)
-    # GetProcessedData(utils.TRAIN_INPUT_FILE, utils.TRAIN_OUTPUT_FILE).make_xls_from_df(utils.TRAIN_FILE_XLSX)
-
+    # GetProcessedData(utils.TRAIN_INPUT_FILE, utils.TRAIN_OUTPUT_FILE).get_feature_label_arrays(show_arrays=True)
+    GetProcessedData(utils.TRAIN_INPUT_FILE, utils.TRAIN_OUTPUT_FILE).make_xls_from_df(utils.TRAIN_FILE_XLSX)

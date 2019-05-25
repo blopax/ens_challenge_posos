@@ -3,3 +3,4 @@ venv
 __pycache__
 params.txt
 .ipynb_checkpoints
+classifier_trainer/**
