@@ -1,0 +1,300 @@
+
+    # output = 1
+
+    python run_classifier.py \
+    --task_name=cola \
+    --do_train=true \
+    --do_eval=true \
+    --do_predict=true \
+    --data_dir=./data/ \
+    --vocab_file=./multi_cased_L-12_H-768_A-12/vocab.txt \
+    --bert_config_file=./multi_cased_L-12_H-768_A-12/bert_config.json \
+    --init_checkpoint=./multi_cased_L-12_H-768_A-12/bert_model.ckpt --max_seq_length=128 \
+    --train_batch_size=8 \
+    --learning_rate=1e-05 \
+    --num_train_epochs=2 \
+    --output_dir=./output_1/ \
+    --do_lower_case=False
+
+    # ________________
+                
+
+    # output = 2
+
+    python run_classifier.py \
+    --task_name=cola \
+    --do_train=true \
+    --do_eval=true \
+    --do_predict=true \
+    --data_dir=./data/ \
+    --vocab_file=./multi_cased_L-12_H-768_A-12/vocab.txt \
+    --bert_config_file=./multi_cased_L-12_H-768_A-12/bert_config.json \
+    --init_checkpoint=./multi_cased_L-12_H-768_A-12/bert_model.ckpt --max_seq_length=128 \
+    --train_batch_size=8 \
+    --learning_rate=1e-05 \
+    --num_train_epochs=3 \
+    --output_dir=./output_2/ \
+    --do_lower_case=False
+
+    # ________________
+                
+
+    # output = 3
+
+    python run_classifier.py \
+    --task_name=cola \
+    --do_train=true \
+    --do_eval=true \
+    --do_predict=true \
+    --data_dir=./data/ \
+    --vocab_file=./multi_cased_L-12_H-768_A-12/vocab.txt \
+    --bert_config_file=./multi_cased_L-12_H-768_A-12/bert_config.json \
+    --init_checkpoint=./multi_cased_L-12_H-768_A-12/bert_model.ckpt --max_seq_length=128 \
+    --train_batch_size=8 \
+    --learning_rate=1e-05 \
+    --num_train_epochs=4 \
+    --output_dir=./output_3/ \
+    --do_lower_case=False
+
+    # ________________
+                
+
+    # output = 4
+
+    python run_classifier.py \
+    --task_name=cola \
+    --do_train=true \
+    --do_eval=true \
+    --do_predict=true \
+    --data_dir=./data/ \
+    --vocab_file=./multi_cased_L-12_H-768_A-12/vocab.txt \
+    --bert_config_file=./multi_cased_L-12_H-768_A-12/bert_config.json \
+    --init_checkpoint=./multi_cased_L-12_H-768_A-12/bert_model.ckpt --max_seq_length=128 \
+    --train_batch_size=8 \
+    --learning_rate=2e-05 \
+    --num_train_epochs=2 \
+    --output_dir=./output_4/ \
+    --do_lower_case=False
+
+    # ________________
+                
+
+    # output = 5
+
+    python run_classifier.py \
+    --task_name=cola \
+    --do_train=true \
+    --do_eval=true \
+    --do_predict=true \
+    --data_dir=./data/ \
+    --vocab_file=./multi_cased_L-12_H-768_A-12/vocab.txt \
+    --bert_config_file=./multi_cased_L-12_H-768_A-12/bert_config.json \
+    --init_checkpoint=./multi_cased_L-12_H-768_A-12/bert_model.ckpt --max_seq_length=128 \
+    --train_batch_size=8 \
+    --learning_rate=2e-05 \
+    --num_train_epochs=3 \
+    --output_dir=./output_5/ \
+    --do_lower_case=False
+
+    # ________________
+                
+
+    # output = 6
+
+    python run_classifier.py \
+    --task_name=cola \
+    --do_train=true \
+    --do_eval=true \
+    --do_predict=true \
+    --data_dir=./data/ \
+    --vocab_file=./multi_cased_L-12_H-768_A-12/vocab.txt \
+    --bert_config_file=./multi_cased_L-12_H-768_A-12/bert_config.json \
+    --init_checkpoint=./multi_cased_L-12_H-768_A-12/bert_model.ckpt --max_seq_length=128 \
+    --train_batch_size=8 \
+    --learning_rate=2e-05 \
+    --num_train_epochs=4 \
+    --output_dir=./output_6/ \
+    --do_lower_case=False
+
+    # ________________
+                
+
+    # output = 7
+
+    python run_classifier.py \
+    --task_name=cola \
+    --do_train=true \
+    --do_eval=true \
+    --do_predict=true \
+    --data_dir=./data/ \
+    --vocab_file=./multi_cased_L-12_H-768_A-12/vocab.txt \
+    --bert_config_file=./multi_cased_L-12_H-768_A-12/bert_config.json \
+    --init_checkpoint=./multi_cased_L-12_H-768_A-12/bert_model.ckpt --max_seq_length=128 \
+    --train_batch_size=8 \
+    --learning_rate=3e-05 \
+    --num_train_epochs=2 \
+    --output_dir=./output_7/ \
+    --do_lower_case=False
+
+    # ________________
+                
+
+    # output = 8
+
+    python run_classifier.py \
+    --task_name=cola \
+    --do_train=true \
+    --do_eval=true \
+    --do_predict=true \
+    --data_dir=./data/ \
+    --vocab_file=./multi_cased_L-12_H-768_A-12/vocab.txt \
+    --bert_config_file=./multi_cased_L-12_H-768_A-12/bert_config.json \
+    --init_checkpoint=./multi_cased_L-12_H-768_A-12/bert_model.ckpt --max_seq_length=128 \
+    --train_batch_size=8 \
+    --learning_rate=3e-05 \
+    --num_train_epochs=3 \
+    --output_dir=./output_8/ \
+    --do_lower_case=False
+
+    # ________________
+                
+
+    # output = 9
+
+    python run_classifier.py \
+    --task_name=cola \
+    --do_train=true \
+    --do_eval=true \
+    --do_predict=true \
+    --data_dir=./data/ \
+    --vocab_file=./multi_cased_L-12_H-768_A-12/vocab.txt \
+    --bert_config_file=./multi_cased_L-12_H-768_A-12/bert_config.json \
+    --init_checkpoint=./multi_cased_L-12_H-768_A-12/bert_model.ckpt --max_seq_length=128 \
+    --train_batch_size=8 \
+    --learning_rate=3e-05 \
+    --num_train_epochs=4 \
+    --output_dir=./output_9/ \
+    --do_lower_case=False
+
+    # ________________
+                
+
+    # output = 10
+
+    python run_classifier.py \
+    --task_name=cola \
+    --do_train=true \
+    --do_eval=true \
+    --do_predict=true \
+    --data_dir=./data/ \
+    --vocab_file=./multi_cased_L-12_H-768_A-12/vocab.txt \
+    --bert_config_file=./multi_cased_L-12_H-768_A-12/bert_config.json \
+    --init_checkpoint=./multi_cased_L-12_H-768_A-12/bert_model.ckpt --max_seq_length=128 \
+    --train_batch_size=8 \
+    --learning_rate=4e-05 \
+    --num_train_epochs=2 \
+    --output_dir=./output_10/ \
+    --do_lower_case=False
+
+    # ________________
+                
+
+    # output = 11
+
+    python run_classifier.py \
+    --task_name=cola \
+    --do_train=true \
+    --do_eval=true \
+    --do_predict=true \
+    --data_dir=./data/ \
+    --vocab_file=./multi_cased_L-12_H-768_A-12/vocab.txt \
+    --bert_config_file=./multi_cased_L-12_H-768_A-12/bert_config.json \
+    --init_checkpoint=./multi_cased_L-12_H-768_A-12/bert_model.ckpt --max_seq_length=128 \
+    --train_batch_size=8 \
+    --learning_rate=4e-05 \
+    --num_train_epochs=3 \
+    --output_dir=./output_11/ \
+    --do_lower_case=False
+
+    # ________________
+                
+
+    # output = 12
+
+    python run_classifier.py \
+    --task_name=cola \
+    --do_train=true \
+    --do_eval=true \
+    --do_predict=true \
+    --data_dir=./data/ \
+    --vocab_file=./multi_cased_L-12_H-768_A-12/vocab.txt \
+    --bert_config_file=./multi_cased_L-12_H-768_A-12/bert_config.json \
+    --init_checkpoint=./multi_cased_L-12_H-768_A-12/bert_model.ckpt --max_seq_length=128 \
+    --train_batch_size=8 \
+    --learning_rate=4e-05 \
+    --num_train_epochs=4 \
+    --output_dir=./output_12/ \
+    --do_lower_case=False
+
+    # ________________
+                
+
+    # output = 13
+
+    python run_classifier.py \
+    --task_name=cola \
+    --do_train=true \
+    --do_eval=true \
+    --do_predict=true \
+    --data_dir=./data/ \
+    --vocab_file=./multi_cased_L-12_H-768_A-12/vocab.txt \
+    --bert_config_file=./multi_cased_L-12_H-768_A-12/bert_config.json \
+    --init_checkpoint=./multi_cased_L-12_H-768_A-12/bert_model.ckpt --max_seq_length=128 \
+    --train_batch_size=8 \
+    --learning_rate=5e-05 \
+    --num_train_epochs=2 \
+    --output_dir=./output_13/ \
+    --do_lower_case=False
+
+    # ________________
+                
+
+    # output = 14
+
+    python run_classifier.py \
+    --task_name=cola \
+    --do_train=true \
+    --do_eval=true \
+    --do_predict=true \
+    --data_dir=./data/ \
+    --vocab_file=./multi_cased_L-12_H-768_A-12/vocab.txt \
+    --bert_config_file=./multi_cased_L-12_H-768_A-12/bert_config.json \
+    --init_checkpoint=./multi_cased_L-12_H-768_A-12/bert_model.ckpt --max_seq_length=128 \
+    --train_batch_size=8 \
+    --learning_rate=5e-05 \
+    --num_train_epochs=3 \
+    --output_dir=./output_14/ \
+    --do_lower_case=False
+
+    # ________________
+                
+
+    # output = 15
+
+    python run_classifier.py \
+    --task_name=cola \
+    --do_train=true \
+    --do_eval=true \
+    --do_predict=true \
+    --data_dir=./data/ \
+    --vocab_file=./multi_cased_L-12_H-768_A-12/vocab.txt \
+    --bert_config_file=./multi_cased_L-12_H-768_A-12/bert_config.json \
+    --init_checkpoint=./multi_cased_L-12_H-768_A-12/bert_model.ckpt --max_seq_length=128 \
+    --train_batch_size=8 \
+    --learning_rate=5e-05 \
+    --num_train_epochs=4 \
+    --output_dir=./output_15/ \
+    --do_lower_case=False
+
+    # ________________
+                

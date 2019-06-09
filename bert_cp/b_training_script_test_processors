@@ -1,0 +1,88 @@
+
+    # output = 19
+    # time
+    
+    # python run_classifier.py \
+    # --task_name=cola \
+    # --do_train=true \
+    # --do_eval=true \
+    # --do_predict=true \
+    # --data_dir=./data/ \
+    # --vocab_file=./multi_cased_L-12_H-768_A-12/vocab.txt \
+    # --bert_config_file=./multi_cased_L-12_H-768_A-12/bert_config.json \
+    # --init_checkpoint=./multi_cased_L-12_H-768_A-12/bert_model.ckpt --max_seq_length=128 \
+    # --train_batch_size=16 \
+    # --learning_rate=2e-05 \
+    # --num_train_epochs=1 \
+    # --output_dir=./output_19/ \
+    # --do_lower_case=False
+    
+    # time
+    # ________________
+                
+
+    # output = 20
+    time
+    
+    python run_classifier.py \
+    --task_name=mnli \
+    --do_train=true \
+    --do_eval=true \
+    --do_predict=true \
+    --data_dir=./data/ \
+    --vocab_file=./multi_cased_L-12_H-768_A-12/vocab.txt \
+    --bert_config_file=./multi_cased_L-12_H-768_A-12/bert_config.json \
+    --init_checkpoint=./multi_cased_L-12_H-768_A-12/bert_model.ckpt --max_seq_length=128 \
+    --train_batch_size=16 \
+    --learning_rate=2e-05 \
+    --num_train_epochs=1 \
+    --output_dir=./output_20/ \
+    --do_lower_case=False
+    
+    time
+    # ________________
+                
+
+    # output = 21
+    time
+    
+    python run_classifier.py \
+    --task_name=mrpc \
+    --do_train=true \
+    --do_eval=true \
+    --do_predict=true \
+    --data_dir=./data/ \
+    --vocab_file=./multi_cased_L-12_H-768_A-12/vocab.txt \
+    --bert_config_file=./multi_cased_L-12_H-768_A-12/bert_config.json \
+    --init_checkpoint=./multi_cased_L-12_H-768_A-12/bert_model.ckpt --max_seq_length=128 \
+    --train_batch_size=16 \
+    --learning_rate=2e-05 \
+    --num_train_epochs=1 \
+    --output_dir=./output_21/ \
+    --do_lower_case=False
+    
+    time
+    # ________________
+                
+
+    # output = 22
+    time
+    
+    python run_classifier.py \
+    --task_name=xnli \
+    --do_train=true \
+    --do_eval=true \
+    --do_predict=true \
+    --data_dir=./data/ \
+    --vocab_file=./multi_cased_L-12_H-768_A-12/vocab.txt \
+    --bert_config_file=./multi_cased_L-12_H-768_A-12/bert_config.json \
+    --init_checkpoint=./multi_cased_L-12_H-768_A-12/bert_model.ckpt --max_seq_length=128 \
+    --train_batch_size=16 \
+    --learning_rate=2e-05 \
+    --num_train_epochs=1 \
+    --output_dir=./output_22/ \
+    --do_lower_case=False
+    
+    time
+    # ________________
+                
