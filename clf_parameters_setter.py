@@ -1,4 +1,7 @@
 from hyperparams import randomsearch_base
+from hyperparams import randomsearch_base_SVM
+from hyperparams import randomsearch_base_SVC
+from hyperparams import randomsearch_base_NB
 from hyperparams import gridsearch_base
 
 
@@ -37,7 +40,7 @@ class ClfParamsSetter:
 
         distrib = dict()
         for k, v in dict_parameters.items():
-            if k in ["BernouilliNB", "MultinomialNB"]:
+            if k in ["BernouilliNB", "MultinomialNB", 'SVM', 'nuSVC', 'Dummy']:
                 for key, value in v.items():
                     distrib[key] = value
             else:

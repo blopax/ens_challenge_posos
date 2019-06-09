@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 
 import utils
+import text_analysis
 
 
 class GetProcessedData:
@@ -50,7 +51,12 @@ class GetProcessedData:
         """
         train_df = self._get_df_from_csv()
         train_df = self._clean(train_df)
-        feature = np.array(train_df['question'])
+        # train_df['duree'] = train_df['question'].apply(lambda text: int(text_analysis.check_time(text)))
+        feature = np.array(train_df['question']) #, ndmin=2)
+        # new_feature = np.array(train_df['duree'], ndmin=2)
+        # np.concatenate((feature, new_feature))
+        # feature = np.transpose(feature)
+        # print("feature shape = {}".format(feature.shape))
         # if feature.ndim == 1:
         #     feature = feature.reshape(feature.shape[0], 1)
         label = np.array(train_df['intention'])
@@ -75,4 +81,5 @@ class GetProcessedData:
 
 if __name__ == "__main__":
     # GetProcessedData(utils.TRAIN_INPUT_FILE, utils.TRAIN_OUTPUT_FILE).get_feature_label_arrays(show_arrays=True)
-    GetProcessedData(utils.TRAIN_INPUT_FILE, utils.TRAIN_OUTPUT_FILE).make_xls_from_df(utils.TRAIN_FILE_XLSX)
+    GetProcessedData(utils.TRAIN_INPUT_FILE, utils.TRAIN_OUTPUT_FILE).get_feature_label_arrays(show_df=True)
+    # GetProcessedData(utils.TRAIN_INPUT_FILE, utils.TRAIN_OUTPUT_FILE).make_xls_from_df(utils.TRAIN_FILE_XLSX)
