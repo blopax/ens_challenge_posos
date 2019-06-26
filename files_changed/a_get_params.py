@@ -59,8 +59,11 @@ with open('b_training_script_test_processors', 'a+') as f:
                     print(train_script, file=f)
 
                     with open('b_hyperparams_per_output', 'a+') as fd:
-                        "\noutput_{}\ntrain_batch_size = {}\nlearning_rate = {}\n epochs = {}\n task = {}\n".format(
+                        hyperparams = "\noutput_{}\ntrain_batch_size = {}\nlearning_rate = {}\n epochs = {}\n task = {}\n".format(
                             i, train_batch_size, learning_rate, epochs, task)
+                        print(hyperparams, file=fd)
+
+
 
 # batch size: [16,32]  --> essayer aussi ac 8
 # learning rate: [2e-5, 3e-5, 5e-5]  --> essayer aussi ac 1e-5
