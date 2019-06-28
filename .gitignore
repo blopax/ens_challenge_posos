@@ -4,4 +4,6 @@ __pycache__
 params.txt
 .ipynb_checkpoints
 classifier_trainer/**
+a_output
+
 
